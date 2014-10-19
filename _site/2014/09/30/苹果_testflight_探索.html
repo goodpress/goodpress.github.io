@@ -1,0 +1,98 @@
+<h1 id="testflight">了解苹果 TestFlight</h1>
+<p><img src="http://img1.tbcdn.cn/L1/461/1/397d90f49f79378552594cb988d83ae7caefcb6f_210x210.jpg" alt="screenshot" /></p>
+
+<p>前提条件:</p>
+
+<ul>
+  <li>受邀者必须是 iOS8及以上</li>
+  <li>被测 app 有效期仅30天(从编译那天计算而不是受邀者开始测试那天)</li>
+  <li>受邀者测试期间,开发者可以再次提交新的被测 app</li>
+  <li>受邀者会自动升级被测 app.</li>
+</ul>
+
+<h1 id="minhttpsitunesconnectapplecomdownloadsdocumentationtestflight-v09-itc-export-swmov"><a href="https://itunesconnect.apple.com/downloads/Documentation/TestFlight-v09-iTC-Export-sw.mov">官方指导视频(15min)</a></h1>
+
+<h1 id="enhttpsdeveloperapplecomlibraryiosdocumentationlanguagesutilitiesconceptualitunesconnectguidechaptersbetatestingtheapphtmlapplerefdocuidtp40011225-ch35-sw2"><a href="https://developer.apple.com/library/ios/documentation/LanguagesUtilities/Conceptual/iTunesConnect_Guide/Chapters/BetaTestingTheApp.html#//apple_ref/doc/uid/TP40011225-CH35-SW2">官方指导文档(EN)</a></h1>
+
+<p>iOS 应用程序的测试对于 iOS 开发者来说一直让人非常头疼。自从苹果公司收购了 TestFlight 的制造商 Burstly 公司后，将 TestFlight 加入 iOS 8 变为了该领域一个非常重要的改进.</p>
+
+<h1 id="testflight--">TestFlight  发布</h1>
+
+<!--然而对于主要做应用开发的人来说，他们也经常使用另一种方式：Ad Hoc 发布。每一个 iOS 设备都有一个独有的设备识别码（ UDID ）。这个设备识别码可以帮助开发者在他们的账号下添加该设备，使该设备能够接受 Ad Hoc 发布。通过这个步骤，开发者无需公开发布程序也能将程序放到设备上进行试验。管理运行 Ad Hoc 发布也很简单。开发者只需开发者创建并维护一个发布日志，指明什么特定的设备可以运行什么特定的应用程序，即可让该设备得到 beta 版应用程序的运行权限。然而对于大部分的开发者来说，一个账号被限制只能对 100 个设备进行此种设置。并且这个过程非常容易被搞砸，也很容易造成让人迷惑的错误，因此对于开发者来说 Ad Hoc 发布并不是一个非常好的工具。而 TestFlight 看起来会改变这一切。
+
+第一个非常重要的改变就是 TestFlight 不再需要开发者或者测试者提供你设备识别码或者相应的身份信息了。目前，如果你想添加一个新设备，你需要完成以下步骤：
+
+开发者需要让测试者提供他们的设备识别码（如果测试者不知道如何看到他们的设备识别码，开发者还需要告诉测试者如何去找到他们的设备识别码）。
+
+测试者用一个软件取出他们的设备识别码。
+
+测试者把设备识别码发给开发者。
+
+开发者登陆苹果开发者入口。
+
+开发者把测试者的设备加入他们的账号中。
+
+开发者将设备放入合适的应用程序账号中。
+
+开发者添加测试者的信息，并更新应用程序。
+
+开发者将应用程序发布给测试者。
+
+以上的步骤依据开发者所用的工具会有少许差异，但是这个步骤至少大致描述了整个过程。而-->
+
+<p>大部分人只在他们的终端上通过 App Store 下载安装应用程序。 TestFlight 的步骤基本如下：</p>
+
+<ol>
+  <li>
+    <p>测试者告诉开发者他们的苹果账号。</p>
+  </li>
+  <li>
+    <p>开发者登陆 iTunes Connect。</p>
+  </li>
+  <li>
+    <p>开发者给测试者发送邮件邀请。</p>
+  </li>
+  <li>
+    <p>测试者接受邀请。</p>
+  </li>
+  <li>
+    <p>测试者通过 TestFlight 软件下载安装程序。</p>
+  </li>
+</ol>
+
+<h1 id="section">1000 个苹果账号</h1>
+
+<p>开发者长期以来一直抱怨个不停的就是 100 个设备的限制。然而现在开发者可以在他们的 beta 版应用程序下添加 1000 个苹果账号。</p>
+
+<p>除了 1000 个测试者之外，开发者还可以加上 25 个国际测试者。不过国际测试者不能仅仅通过邮件邀请，他们必须有一个由开发者在 iTunes Connect 里创建的账号。这个新加入的规则的好处就是国际测试者不再需要等待应用程序发布就能参与到测试过程中。</p>
+
+<p>当应用程序的新版本被上传并通过审核后，它将有 30 天的有效期。如果 30 天之后开发者没有发布新的版本，测试者将无法运行设备上的测试版应用程序。直到开发者发布新版本之后，测试者才可以再度运行程序。除了要上传应用程序之外，开发者还必须提交程序的元数据。应用程序的描述以及测试者需要测试的信息也应该被上传。</p>
+
+<h1 id="section-1">只能下载最新版本</h1>
+
+<p>另一个对所有开发者来说值得一提的事情是：不论是国内测试者还是国际测试者，他们都只能下载安装最新版的测试软件。依据苹果公司的新 iTunes Connect 发布会的视频，只有最新版本才可以提供下载，而之前的版本全部显示为inactive 。提交了新版本之后，之前在旁边备注一个对勾的可供下载版也会显示为 inactive 。当日也许开发者有能力通过一些方式让测试者接触到之前的老版本。然而只有等到秋季苹果公布新的 iTunes Connect 的官方文件我们才可以确信这一点。然而仅能下载最新版本这一个特性也许会成为许多开发者无法接受的条件。</p>
+
+<h1 id="section-2">崩溃报告……明年下半年再说</h1>
+
+<p>最后一个值得 TestFlight 一提的特性自然是崩溃报告。当你设备上的软件崩溃时，会产生一条错误日志。iTunes Connect 一直以来都提供浏览崩溃日志的能力，但是很少有人成功。另一个总被遗忘的部分就是缺少符号化。而这意味着开发者看到的崩溃日志将不是哪一部分的代码导致应用崩溃，而是仿佛永无止境的用十六进制表示的导致应用崩溃的代码所在地址。也就是说，如果应用程序崩溃了，开发者们并不会看到类似于[OMGASIHTTPRequest reportFinished]的具体的错误信息，而是类似于0x9b000 + 23698的内容。诸如 HockeyApp 之类的第三方服务曾经提供过一段时间的错误日志符号化服务，不过现在 iTunes Connect 终于将拥有这个功能。然而不幸的是这个特性将会在<code>明年下半年</code>发布，因此希望看到有用的崩溃日志的开发者们现在还得利用一些其他的工具。</p>
+
+<h1 id="section-3">用户相关界面:</h1>
+
+<p><img src="http://img1.tbcdn.cn/L1/461/1/cce72662a73d0ffc06d90500f67b2c1fd70a2d51_640x640.jpg" alt="screenshot" /></p>
+
+<h1 id="section-4">开发者相关界面:</h1>
+
+<p><img src="http://img1.tbcdn.cn/L1/461/1/35db75159d791ca5a1dfa06f40d811e188a974cf_640x640.jpg" alt="screenshot" /></p>
+
+<p><img src="http://img2.tbcdn.cn/L1/461/1/80ea0b3e2a195db90343990ba82b8b8d6f0715c4_640x640.jpg" alt="screenshot" /></p>
+
+<p><img src="http://img1.tbcdn.cn/L1/461/1/79a5530fafc60d78658004951c74c6dd09e473c6_640x640.jpg" alt="screenshot" /></p>
+
+<p><img src="http://img3.tbcdn.cn/L1/461/1/c5860a05033b2cbce6471ca1fdd90c9c278e0e5a_640x640.jpg" alt="screenshot" /></p>
+
+<p><img src="http://img4.tbcdn.cn/L1/461/1/dc6ab50a55bd04743e786a8cf8cf0239a60f70a2_640x640.jpg" alt="screenshot" /></p>
+
+<p><img src="http://img1.tbcdn.cn/L1/461/1/878a4cd263e2526436762909d22383c8901c7909_640x640.jpg" alt="screenshot" /></p>
+
+<p><img src="http://img4.tbcdn.cn/L1/461/1/47a7cd88d26841c5b576dd6d2be87371722e71ba_640x640.jpg" alt="screenshot" /></p>
+
