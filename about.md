@@ -4,8 +4,17 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+
+- 阿里巴巴-聚划算QA成员
+- 曾任同花顺手机项目经理
+- 曾在工厂车间里做过半年电工
+
+```
+
+有很多稀奇古怪的想法，却不知如何用最好的文字记录下来。看到自己曾经的文字充满傻气的时候，笑一笑，是自己又成长了。
+
+```
+
+新浪微博: [@修行的魏玉科](http://weibo.com/godnevergone)
